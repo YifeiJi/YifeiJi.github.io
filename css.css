@@ -1,0 +1,168 @@
+
+@font-face{
+    font-family: Moonlight;
+    src: url("./Moonlight.ttf");
+    }
+
+
+    @font-face{
+        font-family: tit;
+        src: url("./tit.ttf");
+        }
+    
+.ellipsis
+{
+    margin-top: -2vh;
+    margin-left: 35vw;
+
+}
+.date
+{
+margin-left: 3vw;
+ font-family: Microsoft YaHei; 
+font-size:1vw;
+}
+.more
+{
+align-self:right;
+color: black;
+text-decoration:none;
+/* border-left-width: 80vw; */
+float: right;
+}
+.more:hover
+{
+align-self:right;
+color: #e67e22;
+text-decoration:none;
+
+}
+.item
+{
+/* display:inline-block; */
+    font-family: "tit";
+    font-size:3.5vh;
+    border-left:5px solid #555;
+    color:#555;
+    vertical-align:baseline;
+}
+.item_
+{
+/* display:inline-block; */
+    font-family: "tit";
+    font-size:5vh;
+    /* border-left:5px solid #555; */
+    color:#555;
+    vertical-align:baseline;
+   
+}
+
+ .header
+{
+display: block;
+/* text-align: center; */
+align-items: center;
+padding: 5px 10px 10px 5px;
+height:30vh;
+border:1px solid #F6F5F0;
+border-radius: 8px;
+margin: 50px;
+background-image: url("header.jpg");  
+background-size: cover;
+background-repeat: no-repeat;
+} 
+
+.item p
+{
+    /* display:inline-block; */
+    
+}
+.btitle
+{
+    font-size: 5vw;
+    font-family: tit;
+    color: #F6F5F0;
+    margin-top:10vh;
+    margin-left:5vw;
+}
+body
+{
+    /* background-image: url("bg.jpg");  
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background-color: #F6F5F0;
+    margin: 20px;
+}
+.summary
+{
+display: grid;
+padding: 5;
+grid-template-columns: 8vw 3vw 18vw 23vw 25vw 0vw;
+grid-template-rows:  5vh;
+grid-gap: 2vw;
+height: 8vh;
+margin:auto;
+align-self: auto;
+text-align: center;
+-ms-grid-column-align: center;
+margin-bottom: -2vh;
+margin-left: 5vw;
+margin-right: 5vw;
+
+}
+
+.table
+{
+display: block;
+flex-direction: column;
+align-items: center;
+width: 80vw;
+align-self: center;
+margin: auto;
+}
+
+.article p
+{
+    padding: 1em;
+    font-family: "tit";
+    font-size:2.5vh;
+    color:#555;
+}
+
+.article
+{
+    padding: 1em;
+    text-align: left;
+    font-family: "tit";
+    font-size:2.5vh;
+    color:#555;
+    
+}
+
+.title
+{
+    margin-top: -2vh;
+    border-left:5px solid #555;
+    padding: 1em;
+    font-family: "tit";
+    font-size:5vh;
+    color:#555;
+    height: 3vh;
+}
+
+.line
+{
+     padding: 0 2vw 0; 
+     margin: 2vw 0; 
+     line-height: 1px; 
+     border-left: 30vw solid #555; 
+     border-right: 30vw solid #555;
+     color:#555;
+    text-align: center; 
+}
+.line span{
+    display: inline-block;
+    width: 10vw;
+    vertical-align: middle;
+text-align: center;
+}
