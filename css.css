@@ -1,13 +1,13 @@
 
 @font-face{
     font-family: Moonlight;
-    src: url("./Moonlight.ttf");
+    src: url("./src/Moonlight.ttf");
     }
 
 
     @font-face{
         font-family: tit;
-        src: url("./tit.ttf");
+        src: url("./src/tit.ttf");
         }
     
 .ellipsis
@@ -67,7 +67,7 @@ height:30vh;
 border:1px solid #F6F5F0;
 border-radius: 8px;
 margin: 50px;
-background-image: url("header.jpg");  
+background-image: url("./src/header.jpg");  
 background-size: cover;
 background-repeat: no-repeat;
 } 
