@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="btitle">洋娃娃和小熊跳舞</div>
+    </div>
+    <hr>
+    </hr>
+
+
+
+    <div class="summary">
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">季逸飞</p>
+        </div>
+        <div class="item_">
+            <p style="margin-top:-0.5vh; "><img src="./src/h.jpg" style="height:6vh;border-radius: 3vh;"></p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">软件学院 软件71</p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">微信 JYF544922995</p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-1vh; "> 邮箱 jiyf990330@163.com</p>
+        </div>
+        <div class="item"></div>
+        <!-- <div class="item">  <img src="sh.jpg"  height="200" width="200"></div> -->
+
+    </div>
+    <hr>
+    </hr>
+    <div class="table">
+        <div class="article">
+            <div class="date">2019-07-05</div>
+            <div class="title">基础实验2-Javascript学习日志</div>
+
+            <p>小学期的第二节课讲的是有关JavaScript的内容。当页面需要较为复杂的控制逻辑时，仅仅使用html和css显然是无法完成的。课后作业是几道JavaScript的编程题，因此想在这里做一个记录。</p>
+<p>第一题练习的部分有字符串的处理,包括一些JavaScript的字符串对象的内置方法，如.slice(),.indexOf()等。另外，题目中给出的格式是可以转换成时间戳的，这也给排序和比较带来方便，可以先直接转换成时间戳进行排序，然后再转换回来。另外，再与ddl进行比较的时候，也可以直接用时间戳相减并进行单位换算。要注意题目中转换的规则（即，时间差整数k天的时候算迟交(k+1)天，但当k=0的时候认为没有迟交。</p>          
+            
+
+<p>第二题要求实现一个iterator，我的想法是，如果在每次求后继的时候遍历树找到当前节点，再找到其后继节点，时间复杂度比较高，不如一开始就把整棵树的信息转化成一个一维数组。即，数组的第i个元素保存树中第i个节点的值。这样，判断是否存在下一个元素的时候，可以直接与数组大小比较。</p>
+<p>第三题要求将一个列表里的元素进行相应的函数变换。采取的方式是， 递归地对列表进行处理。边界情况是当当前元素的类型是"number"时返回函数值，即递归函数的开头要判断当前传入的对象是否类型为"number"。</p>
+<p>第四题实现的是，对一个表达式求值，题目中对于表达式中的“&”运算符定义相应的运算法则。定义一个递归函数，参数为运算符定义和当前待处理的字符串。递归函数开头，首先去除首位配对的括号。从左至右扫描字符串，遇到“（”时计数器加一，遇到“）”时计数器减一，则，当遇到“&”且计数器的值为零时，代表当前运算符不被括号包裹。找出前两个不被括号包裹的运算符“&”的位置。递归计算第一个“&”之前的字符串的值和两个“&“之间的字符串的值，再做“&”运算。将结果和第二个“&”之后的字符串合并，递归计算。注意处理只有一个“&”以及只有一个数字时的边界情况。</p>
+
+<a class="more" href="index.html" rel="contents">
+                Back
+            </a>
+
+        </div>
+        <hr>
+        </hr>
+    </div>
+
+</body>
+
+</html>
