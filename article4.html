@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="btitle">洋娃娃和小熊跳舞</div>
+    </div>
+    <hr>
+    </hr>
+
+
+
+    <div class="summary">
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">季逸飞</p>
+        </div>
+        <div class="item_">
+            <p style="margin-top:-0.5vh; "><img src="./src/h.jpg" style="height:6vh;border-radius: 3vh;"></p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">软件学院 软件71</p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-0.5vh; ">微信 JYF544922995</p>
+        </div>
+        <div class="item">
+            <p style="margin-top:-1vh; "> 邮箱 jiyf990330@163.com</p>
+        </div>
+        <div class="item"></div>
+        <!-- <div class="item">  <img src="sh.jpg"  height="200" width="200"></div> -->
+
+    </div>
+    <hr>
+    </hr>
+    <div class="table">
+        <div class="article">
+            <div class="date">2019-07-05</div>
+            <div class="title">基础实验4-Node JS服务开发实践</div>
+
+            <p>本次实验我使用的是express框架，实现过程中遇到的问题是，一开始用的是`body-parser`中间件，导致不能解析`Content-Type='multipart/form-data'`类型的请求。使用`'connect-multiparty'`后解决问题。
+            </p>
+            <p>实现静态文件访问时，一开始能够访问到`index.html`，但其中加载的资源以及链接都不能正常显示以及跳转，查阅资料后发现，应当设置静态文件目录，即将不会发生变化的文件放置在同一个目录下，用`express.static()`（括号内填写静态文件目录），则express
+                会在静态资源目录下查找文件。这样就可以正常显示了。</p>
+            <p>下附访问地址</p>
+            <p>访问静态文件：http://152.136.140.61:8000/</p>
+            <p>api实现url：</p>
+
+            <p> http://152.136.140.61:8000/api/compute</p>
+
+            <p> http://152.136.140.61:8000/api/pair</p>
+            <a class="more" href="index.html" rel="contents">
+                Back
+            </a>
+
+        </div>
+        <hr>
+        </hr>
+    </div>
+
+</body>
+
+</html>
