@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>综合实验文档(3)</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:first-child { margin-top: -20px; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; text-align: left; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); text-align: left; margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { word-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+
+
+
+
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>综合实验文档：Doodle Jump</h1><ul><li><p>本游戏源代码可在<a href='https://github.com/YifeiJi/Doodle_jump'>https://github.com/YifeiJi/Doodle_jump</a>获得。</p><ul><li>季逸飞 软件71 2017013603</li><li>牛浩宇 软件72 2017010729</li></ul></li><li><p>开发环境</p><ul><li>IDE：Cocos Creator </li><li>编程语言：JavaScript </li><li>上传工具：微信web开发者工具</li></ul></li><li><p>微信小游戏二维码如下：</p></li></ul><figure align="center"><img src="C:\Users\jyf\Documents\er.png" width="200" height="200" onerror="this.style.display = 'none';"><figcaption>体验版二维码</figcaption></figure><p>&nbsp;</p><h2><a name='header-n14' class='md-header-anchor '></a>游戏介绍</h2><p>游戏的核心玩法是，玩家通过手机的摆动来控制涂鸦小子的左右移动。涂鸦小子踩到台阶时会向上跳起。涂鸦小子到达的高度越高，游戏的分数也就越高。 </p><h3><a name='header-n16' class='md-header-anchor '></a>情景介绍</h3><p>共设置了4种游戏情景：经典；草丛；雪天；水下。</p><figure class="half">
+<img src="C:\Users\jyf\Documents\default.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\jungle.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\winter.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\underwater.png" onerror="this.style.display = 'none';">
+</figure><h3><a name='header-n19' class='md-header-anchor '></a>元素介绍</h3><h4><a name='header-n20' class='md-header-anchor '></a>台阶</h4><p>本游戏中共有以下三种类型的台阶：</p><h5><a name='header-n22' class='md-header-anchor '></a>普通台阶</h5><figure class="half">
+<img src="C:\Users\jyf\Documents\basicblock.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\winterblock.png" onerror="this.style.display = 'none';">
+</figure><p>台阶固定，涂鸦小子踩到时，会向上弹起。（图示分别为经典/草丛情景以及雪天/水下情景）</p><h5><a name='header-n25' class='md-header-anchor '></a>移动台阶</h5><figure class="third">
+<img src="C:\Users\jyf\Documents\leftright.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\winterleftright.png" onerror="this.style.display = 'none';">
+</figure><p>台阶会左右移动，涂鸦小子踩到时，会向上弹起。（图示分别为经典/草丛情景以及雪天/水下情景）</p><h5><a name='header-n28' class='md-header-anchor '></a>一次性台阶</h5><figure class="third">
+<img src="C:\Users\jyf\Documents\rot.png" onerror="this.style.display = 'none';">
+</figure><p>台阶固定，涂鸦小子踩到时，会向上弹起，但第一次被踩后立即消失。（图示分别为经典/草丛情景以及雪天/水下情景）</p><h4><a name='header-n31' class='md-header-anchor '></a>道具</h4><h5><a name='header-n32' class='md-header-anchor '></a>竹蜻蜓</h5><figure class="half">
+<img src="C:\Users\jyf\Documents\hat.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\hut.png" onerror="this.style.display = 'none';">
+</figure><p>一些台阶上放置了竹蜻蜓，当涂鸦小子到达该台阶时，就会戴上竹蜻蜓，较慢速匀速上升。在上升一定距离后，自动回到初始状态。若途经另外的竹蜻蜓，则上升时间相应延长，若途经小火箭，则更换成小火箭。</p><h5><a name='header-n35' class='md-header-anchor '></a>小火箭</h5><figure class="half">
+<img src="C:\Users\jyf\Documents\rocket.png" onerror="this.style.display = 'none';">
+</figure><p>一些台阶上放置了小火箭，当涂鸦小子到达该台阶时，就会背上火箭，快速匀速上升。在上升一定距离后，自动回到初始状态。若途经另外的小火箭，则上升时间相应延长，若途经竹蜻蜓，则更换成竹蜻蜓。</p><h5><a name='header-n38' class='md-header-anchor '></a>蹦床</h5><figure class="third">
+<img src="C:\Users\jyf\Documents\bed.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\junglebed.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\underwaterbed.png" onerror="this.style.display = 'none';">
+</figure><p>一些台阶上放置了蹦床，涂鸦小子踩到时，会向上加速弹起并旋转。（图示分别为经典/雪天情景，草丛情景以及水下情景）</p><h5><a name='header-n41' class='md-header-anchor '></a>保护膜</h5><figure class="half">
+<img src="C:\Users\jyf\Documents\protection.png" onerror="this.style.display = 'none';">
+</figure><p>一些台阶上放置了保护膜，当涂鸦小子到达该台阶时，就会进入保护模式，免疫怪物的伤害。</p><h4><a name='header-n44' class='md-header-anchor '></a>怪物</h4><figure class="half">
+<img src="C:\Users\jyf\Documents\monster_00.png" onerror="this.style.display = 'none';">
+<img src="C:\Users\jyf\Documents\monster_01.png" onerror="this.style.display = 'none';">
+</figure><p>怪物分为两类，一类左右移动，另一类是是静止的。当涂鸦小子从上往下踩到怪物时，不会受到伤害且向上弹起，但弹起高度不如台阶；其余情形时，若涂鸦小子未处于保护模式，则会因受到怪物的伤害而死亡，并迅速跌落。</p><h4><a name='header-n47' class='md-header-anchor '></a>黑洞</h4><figure class="half">
+<img src="C:\Users\jyf\Documents\loch.png" onerror="this.style.display = 'none';">
+</figure><p>当涂鸦小子经过黑洞时，会被吸入黑洞且不能复活。</p><h3><a name='header-n51' class='md-header-anchor '></a>其他设定介绍</h3><h4><a name='header-n52' class='md-header-anchor '></a>音效</h4><p>当涂鸦小子踩到台阶，怪物或者蹦床时，设计了相应的瞬时音效。当涂鸦小子处于背小火箭或戴竹蜻蜓状态时，有对应的持续音效。</p><h4><a name='header-n54' class='md-header-anchor '></a>复活</h4><p>开始游戏前，玩家可以在商店购买本局游戏的复活次数。当涂鸦小子掉落时，若仍有剩余的复活次数，则会在落到地面前获得小火箭加速以及保护膜，重新回到游戏。</p><h4><a name='header-n56' class='md-header-anchor '></a>暂停</h4><p>玩家可以在游戏过程中点击暂停按钮实现游戏暂停功能。</p><h4><a name='header-n58' class='md-header-anchor '></a>分数</h4><p>一局游戏的分数是在本局中涂鸦小子到达的最高高度。</p><h2><a name='header-n60' class='md-header-anchor '></a>页面介绍</h2><h3><a name='header-n61' class='md-header-anchor '></a>开始页面</h3><p>开始游戏后，玩家见到的页面如下图所示：</p><figure align="center">
+<img src="C:\Users\jyf\Documents\start.png" width="200" height="350" onerror="this.style.display = 'none';">
+<figcaption>游戏开始页面</figcaption>
+</figure><p>点击屏幕上相应按钮可以进入如下不同页面：</p><ul><li>点击play进入核心游戏页面，开始游戏；</li><li>点击scores进入排行榜页面，查看自己和所有微信好友在本游戏中获得的最高分（需要联网）；</li><li>点击options进入游戏设置页面，调整游戏敏感度、难度和音效开关；</li><li>点击store进入商店页面，购买初始携带的道具和复活道具；</li><li>拖动屏幕底端的图片可以切换游戏模式（地图、皮肤）。</li></ul><h3><a name='header-n76' class='md-header-anchor '></a>游戏设置页面</h3><figure align="center">
+<img src="C:\Users\jyf\Documents\option.png" width="200" height="350" onerror="this.style.display = 'none';">
+<figcaption>游戏设置页面</figcaption>
+</figure><p>设置页面中有三个选项：</p><p><strong>敏感度</strong></p><p>调节涂鸦小子左右移动的敏感度</p><p><strong>难度级别</strong></p><p>不同级别出现的台阶种类比例不同。且easy模式没有黑洞，怪物不会移动。</p><h3><a name='header-n83' class='md-header-anchor '></a>商店页面</h3><p>商店页面如下图所示：</p><figure align="center">
+<img src="C:\Users\jyf\Documents\store.jpg" width="200" height="350" onerror="this.style.display = 'none';">
+<figcaption>商店页面</figcaption>
+</figure><p>本页面主要由三行内容块构成。</p><ul><li><p>第一行，玩家可以选择购买下一次开始游戏时携带的装备。</p><ul><li>默认开局时什么都不携带。</li><li>花$100可以购买开局携带Hat道具，提供一定上升距离。</li><li>花$200可以购买开局携带Rocket道具，提供更多上升距离。</li></ul></li><li><p>第二行，玩家可以选择购买复活道具。它的用途是在玩家死亡后提供一次复活机会，购买的越多则复活次数越多。</p><ul><li>注意，以上两种道具均为一次性使用。除非因被黑洞吸走而强制死亡以外，每场游戏结束以后均会清零。</li></ul></li><li><p>第三行显示玩家当前账户余额和返回主页面按钮。</p></li></ul><h3><a name='header-n104' class='md-header-anchor '></a>排行榜页面</h3><p>排行榜页面如下图所示：</p><figure align="center">
+<img src="C:\Users\jyf\Documents\score.png" width="200" height="350" onerror="this.style.display = 'none';">
+<figcaption>排行榜页面</figcaption>
+</figure><p>在本页面，玩家可以查看自己和所有玩过本游戏的微信好友的历史最高分以及相应排名。</p><p>请注意，本页面需要在联网情况下使用，否则将无法访问到相关信息。</p><p>另一方面，由于微信小游戏本身的内存回收机制原因，可能导致退出排行榜后其对应的组件未被及时销毁，这可能引起排行榜无法及时刷新。此时退出小游戏并清理缓存，再重新进入即可刷新。</p><h3><a name='header-n110' class='md-header-anchor '></a>游戏结束页面</h3><p>游戏结束页面如下图所示：</p><figure align="center">
+<img src="C:\Users\jyf\Documents\gameover.png" width="200" height="350" onerror="this.style.display = 'none';">
+<figcaption>结束页面</figcaption>
+</figure><h2><a name='header-n113' class='md-header-anchor '></a>开发亮点</h2><p>本游戏主要由cocos creator开发，设计和玩法比较完整，模式丰富，且可以匹配多种分辨率的设备，开始页面底部的拖动条设计可用来选择不同的游戏情景，设计巧妙。此外，本游戏的分数通过微信云服务实现了实时在线存储，金钱和道具信息等数据实现了本地存储。从而，我们保证了玩家数据不丢失，并实现了微信好友排行榜等功能，可看见所有玩过这个游戏的好友的分数和排名。考虑到部分玩家可能存在好友用户名过长、好友过多等情况，我们都进行了相应的适配，包括裁剪用户名、在长度超出显示范围时显示可上下滚动的scrollview等。还可以将该游戏分享给好友。</p><h2><a name='header-n116' class='md-header-anchor '></a>组员分工</h2><ul><li>季逸飞：等待页面、开始页面、游戏页面、游戏结束页面、游戏设置页面，整个项目的合并及发布</li><li>牛浩宇：开始页面、商店页面、排行榜页面（开放数据域处理）</li></ul><p>&nbsp;</p></div>
+</body>
+</html>
